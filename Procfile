@@ -1,1 +1,0 @@
-web: gunicorn running_workouts.wsgi
