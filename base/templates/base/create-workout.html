@@ -1,0 +1,18 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class ="header-bar">
+    <h3>Create a workout</h3>
+    <a href='{% url 'workouts' %}'>&#8592; Back</a>
+
+</div>
+
+<div class = "card-body">
+<form method = "POST" action="">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input class = "button" type= "submit" value="Create">
+</form>
+</div>
+
+{% endblock content %}

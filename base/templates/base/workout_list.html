@@ -1,0 +1,63 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+
+<div class = "header-bar">
+    <div>
+        <h1>Hello {{request.user|title}}</h1>
+        <h3 style= "margin: 0; color: #c9cacc; padding-bottom: 10px"> welcome to your running log</h3>
+
+        <a id="add-link" href = '{% url 'create-workout'  %}'>Create a workout</a> 
+    </div>
+
+        {% if request.user.is_authenticated %}
+    <a href='{%url 'logout' %}'>Logout</a>
+
+    {% else %}
+    <a href='{%url 'login' %}'>Login</a>
+    {% endif %}
+
+    
+
+</div>
+<div class="workout-items-wrapper">
+    {% for workout in workouts %}
+    <div class = "workouts-wrapper">
+        <div class="workout-title">
+            <a href = '{% url 'update-workout' workout.id %}'>{{workout}}</a>
+        </div>
+        <a class ='delete-link' href = '{% url 'delete-workout' workout.id %}'>&#215;</a>
+    </div>
+    {% empty %}
+    <h3 style = "color: #c9cacc; padding:10px; border-top: 1px solid #c9cacc" >Please Create a Workout</h3>
+    {% endfor %}
+</div>
+
+
+<!-- <table>
+    <tr>
+        <th>Workout</th>
+        <th>Mileage</th>
+        <th>Race</th>
+        <th></th>
+        <th></th>
+    </tr>
+    {% for workout in workouts %}
+    <tr>
+        <td>{{workout.title}}</td>
+        <td>{{workout.mileage}}</td>
+        <td>{{workout.race_type}}</td>
+        <td><a href = '{% url 'update-workout' workout.id %}'>Edit</a></td>
+        <td><a href = '{% url 'delete-workout' workout.id %}'>Delete</a></td>
+    </tr>
+
+    {% empty %}
+        <h3>Please Create a Workout</h3>
+    {% endfor %}
+    <tr>
+    </tr>
+</table>
+
+-->
+
+{% endblock content %}
