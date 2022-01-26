@@ -46,7 +46,6 @@ itsdangerous==2.0.1
 jedi==0.18.1
 Jinja2==3.0.3
 lazy-object-proxy==1.7.1
-lensfun==0.3.95
 LibAppArmor==3.0.3
 libfdt==1.6.1
 louis==3.20.0
