@@ -77,7 +77,6 @@ pycups==2.0.1
 pycurl==7.44.1
 pyflakes==2.4.0
 Pygments==2.11.2
-PyGObject==3.42.0
 PyJWT==2.2.0
 pylint==2.12.2
 pynvim==0.4.3
