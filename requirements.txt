@@ -8,7 +8,6 @@ Automat==20.2.0
 Babel==2.9.1
 backcall==0.2.0
 Beaker==1.11.0
-Brlapi==0.8.3
 btrfsutil==5.16
 buildbot==3.4.0
 buildbot-wsgi-dashboards==3.4.0
