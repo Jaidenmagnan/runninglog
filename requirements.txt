@@ -1,5 +1,4 @@
 appdirs==1.4.4
-arandr==0.1.10
 asgiref==3.4.1
 astroid==2.9.3
 async-generator==1.10
