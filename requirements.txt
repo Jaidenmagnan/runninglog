@@ -92,7 +92,6 @@ pytz==2021.3
 pyxdg==0.27
 PyYAML==5.4.1
 ranger-fm==1.9.3
-Reflector==2021.11.20.2.41.3
 reportlab==3.6.5
 requests==2.26.0
 resolvelib==0.5.5
